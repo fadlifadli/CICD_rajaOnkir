@@ -1,6 +1,8 @@
 name: Run test with cicd
 
-on: [ push ]
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
 
 jobs:
   run_api_automation:
