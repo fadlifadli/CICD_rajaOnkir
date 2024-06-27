@@ -20,7 +20,7 @@ def test():
     results = req.json().get("rajaongkir")["results"]
 
     # ASSERT
-    assert_that(status_code).is_equal_to(2001)
+    assert_that(status_code).is_equal_to(201)
     assert_that(latency).is_less_than(max_latency)
     assert_that(description).is_equal_to("OK")
     assert_that(results).is_type_of(list)
