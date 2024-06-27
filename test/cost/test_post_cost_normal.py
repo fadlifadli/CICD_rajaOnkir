@@ -26,7 +26,7 @@ def test():
     description = req.json().get("rajaongkir")["status"]["description"]
 
     # ASSERT
-    assert_that(status_code).is_equal_to(201)
+    assert_that(status_code).is_equal_to(200)
     assert_that(latency).is_less_than(max_latency)
     assert_that(description).is_equal_to("OK")
     validate_json_schema(instance=req.json(), schema=schema_list_cost_normal)
