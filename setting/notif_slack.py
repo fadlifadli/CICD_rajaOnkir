@@ -28,7 +28,7 @@ def test_send_report_slack():
                         "type": "header",
                         "text": {
                             "type": "plain_text",
-                            "text": f"API AUTOMATION",
+                            "text": f"API AUTOMATION RAJA ONGKIR",
                             "emoji": True
                         }
                     },
