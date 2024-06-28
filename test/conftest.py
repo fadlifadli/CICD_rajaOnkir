@@ -27,7 +27,7 @@ def hook(request):
 
 @pytest.fixture(scope='session', autouse=True)
 def suite(request):
-    # print("\nbefore suite")
+    print("\nbefore suite")
     json_temp = {
         "other": [],
         "failed": [],
@@ -38,4 +38,4 @@ def suite(request):
     jsonFile.write(jsonString)
     jsonFile.close()
     yield
-    # print("after suite")
+    print("after suite")

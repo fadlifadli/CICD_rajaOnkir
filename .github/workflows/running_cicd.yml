@@ -27,4 +27,4 @@ jobs:
       - name: Send report to slack
         run: pytest setting/notif_slack.py
         env:
-          PYTEST_WEBOOKSLACKRAJAONGKIR: ${{ secrets.WEBOOKSLACKRAJAONGKIR }}
+          PYTEST_WEBOOKSLACKRAJAONGKIR2: ${{ secrets.WEBOOKSLACKRAJAONGKIR2 }}
